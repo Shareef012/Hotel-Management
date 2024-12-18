@@ -5,10 +5,9 @@ const cors = require('cors');
 app.use(express.json());
 
 console.log("The server is running successfully...");
-mongoose.connect("mongodb+srv://shareefshaik086:gktmTDNKoiGBhJpC@hotel.nhpdo.mongodb.net/",{
-    useNewUrlParser: true,
-  useUnifiedTopology: true,
-    ssl : true
+mongoose.connect("mongodb+srv://shareefshaik086:gktmTDNKoiGBhJpC@hotel.nhpdo.mongodb.net/", {
+    ssl: true,
+    serverSelectionTimeoutMS: 5000 
 });
 
 mongoose.connection.on("connected",()=>{
