@@ -5,7 +5,7 @@ const cors = require('cors');
 app.use(express.json());
 
 console.log("The server is running successfully...");
-mongoose.connect("mongodb+srv://shareefshaik3297:<Shaik7890@@>@hotelmanagement1.ws9tu.mongodb.net/?retryWrites=true&w=majority&appName=HotelManagement1",{
+mongoose.connect("mongodb+srv://shareefshaik086:gktmTDNKoiGBhJpC@hotel.nhpdo.mongodb.net/",{
     useNewUrlParser: true,
   useUnifiedTopology: true,
 });
