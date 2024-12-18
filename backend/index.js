@@ -8,6 +8,7 @@ console.log("The server is running successfully...");
 mongoose.connect("mongodb+srv://shareefshaik086:gktmTDNKoiGBhJpC@hotel.nhpdo.mongodb.net/",{
     useNewUrlParser: true,
   useUnifiedTopology: true,
+    ssl : true
 });
 
 mongoose.connection.on("connected",()=>{
